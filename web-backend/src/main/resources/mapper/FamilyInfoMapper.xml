@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.c4_ai.mapper.FamilyInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.app.c4_ai.entity.FamilyInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="guardian" property="guardian"/>
+        <result column="relationship" property="relationship"/>
+        <result column="registrationDate" property="registrationDate"/>
+        <result column="familySituation" property="familySituation"/>
+        <result column="residence" property="residence"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,guardian,relationship,registrationDate,familySituation,residence
+    </sql>
+
+</mapper>
